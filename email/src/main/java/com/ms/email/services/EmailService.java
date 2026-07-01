@@ -13,9 +13,9 @@ import java.time.LocalDateTime;
 @Service
 public class EmailService {
 
-    private EmailRepository emailRepository;
+    private final EmailRepository emailRepository;
 
-    private JavaMailSender emailSender;
+    private final JavaMailSender emailSender;
 
     public EmailService(EmailRepository emailRepository, JavaMailSender emailSender) {
         this.emailRepository = emailRepository;

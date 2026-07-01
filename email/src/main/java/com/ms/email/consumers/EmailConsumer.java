@@ -23,7 +23,5 @@ public class EmailConsumer {
         BeanUtils.copyProperties(emailDto, emailModel);
         emailService.sendEmail(emailModel);
         log.info("Status email: {}", emailModel.getStatusEmail());
-
     }
-
 }

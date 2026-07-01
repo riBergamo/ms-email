@@ -3,7 +3,14 @@ package com.ms.email.models;
 import com.ms.email.enums.StatusEmail;
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -29,5 +36,4 @@ public class EmailModel implements Serializable {
 
     @Enumerated(EnumType.STRING)
     private StatusEmail statusEmail;
-
 }

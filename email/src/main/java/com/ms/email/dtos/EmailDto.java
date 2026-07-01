@@ -1,6 +1,5 @@
 package com.ms.email.dtos;
 
-import com.ms.email.enums.StatusEmail;
 import lombok.Data;
 
 import javax.validation.constraints.Email;
@@ -12,10 +11,12 @@ public class EmailDto {
     @NotBlank
     private String ownerRef;
 
-    @NotBlank @Email
+    @NotBlank
+    @Email
     private String emailFrom;
 
-    @NotBlank @Email
+    @NotBlank
+    @Email
     private String emailTo;
 
     @NotBlank
@@ -23,5 +24,4 @@ public class EmailDto {
 
     @NotBlank
     private String text;
-
 }

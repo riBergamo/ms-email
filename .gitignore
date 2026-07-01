@@ -1,0 +1,4 @@
+target/
+email/target/
+.idea/
+*.iml
